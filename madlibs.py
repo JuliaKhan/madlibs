@@ -64,12 +64,33 @@ def show_madlib_form():
 def show_madlib():
     """Shows the output from the madlib form"""
 
-    person = request.args.get('person')
-    color = request.args.get('color')
-    noun = request.args.get('noun')
-    adjective = request.args.get('adjective')
+    adj1 = request.args.get('adj1')
+    adj2 = request.args.get('adj2')
+    adj3 = request.args.get('adj3')
+    n1 = request.args.get('n1')
+    n2 = request.args.get('n2')
+    n3 = request.args.get('n3')
+    pn1 = request.args.get('pn2')
+    pn2 = request.args.get('pn1')
+    pn3 = request.args.get('pn3')
+    pn4 = request.args.get('pn4')
+    game = request.args.get('game')
+    vbing1 = request.args.get('vbing1')
+    vbing2 = request.args.get('vbing2')
+    vbing3 = request.args.get('vbing3')
+    vbing4 = request.args.get('vbing4')
+    plant = request.args.get('plant')
+    bodypart = request.args.get('bodypart')
+    place = request.args.get('place')
+    num = request.args.get('num')
+    
 
-    return render_template("madlib.html", person=person, color=color, noun=noun, adjective=adjective)
+    return render_template("madlib.html", 
+    adj1=adj1, adj2=adj2, adj3=adj3, n1=n1, n2=n2, n3=n3, pn1=pn1,
+    pn2=pn2, pn3=pn3, pn4=pn4, bodypart=bodypart, plant=plant, game=game,
+    vbing1=vbing1, vbing2=vbing2, vbing3=vbing3, vbing4=vbing4, place=place,
+    num=num
+    )
     
 
 if __name__ == "__main__":
