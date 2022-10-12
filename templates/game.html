@@ -1,87 +1,87 @@
-<!doctype html>
-<html>
-<head>
-  <title>Game</title>
-</head>
-<body>
-    <form method="POST" action="/madlib">
-        <div>
-            <label for="adj1">Adjective</label>
-            <input type="text" name="adj1" id="adj1" value="adj1">
-        </div>
-        <div>
-            <label for="adj2">Adjective</label>
-            <input type="text" name="adj2" id="adj2" value="adj2">
-        </div>
-        <div>
-            <label for="adj3">Adjective</label>
-            <input type="text" name="adj3" id="adj3" value="adj3">
-        </div>
-        <div>
-            <label for="n1">Noun</label>
-            <input type="text" name="n1" id="n1" value="n1">
-        </div>
-        <div>
-            <label for="n2">Noun</label>
-            <input type="text" name="n2" id="n2" value="n2">
-        </div>
-        <div>
-            <label for="n3">Noun</label>
-            <input type="text" name="n3" id="n3" value="n3">
-        </div>
-        <div>
-            <label for="pn1">Plural noun</label>
-            <input type="text" name="pn1" id="pn1" value="pn1">
-        </div>
-        <div>
-            <label for="game">Game</label>
-            <input type="text" name="game" id="game" value="game">
-        </div>
-        <div>
-            <label for="pn2">Plural noun</label>
-            <input type="text" name="pn2" id="pn2" value="pn2">
-        </div>
-        <div>
-            <label for="pn3">Plural noun</label>
-            <input type="text" name="pn3" id="pn3" value="pn3">
-        </div>
-        <div>
-            <label for="vbing1">Verb ending in -ing</label>
-            <input type="text" name="vbing1" id="vbing1" value="vbing1">
-        </div>
-        <div>
-            <label for="vbing2">Verb ending in -ing</label>
-            <input type="text" name="vbing2" id="vbing2" value="vbing2">
-        </div>
-        <div>
-            <label for="vbing3">Verb ending in -ing</label>
-            <input type="text" name="vbing3" id="vbing3" value="vbing3">
-        </div>
-        <div>
-            <label for="plant">Plant</label>
-            <input type="text" name="plant" id="plant" value="plant">
-        </div>
-        <div>
-            <label for="bodypart">Body part</label>
-            <input type="text" name="bodypart" id="bodypart" value="bodypart">
-        </div>
-        <div>
-            <label for="place">Place</label>
-            <input type="text" name="place" id="place" value="place">
-        </div>
-        <div>
-            <label for="vbing4">Verb ending in -ing</label>
-            <input type="text" name="vbing4" id="vbing4" value="vbing4">
-        </div>
-        <div>
-          <label for="num">Number</label>
-          <input type="text" name="num" id="num" value="num">
-        </div>
-        <div>
-            <label for="pn4">Plural noun</label>
-            <input type="text" name="pn4" id="pn4" value="pn4">
-        </div>
-      <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Game{% endblock %}
+
+{% block content %}
+
+<form method="POST" action="/madlib">
+  <div>
+      <label for="adj1">Adjective</label>
+      <input type="text" name="adj1" id="adj1" value="adj1">
+  </div>
+  <div>
+      <label for="adj2">Adjective</label>
+      <input type="text" name="adj2" id="adj2" value="adj2">
+  </div>
+  <div>
+      <label for="adj3">Adjective</label>
+      <input type="text" name="adj3" id="adj3" value="adj3">
+  </div>
+  <div>
+      <label for="n1">Noun</label>
+      <input type="text" name="n1" id="n1" value="n1">
+  </div>
+  <div>
+      <label for="n2">Noun</label>
+      <input type="text" name="n2" id="n2" value="n2">
+  </div>
+  <div>
+      <label for="n3">Noun</label>
+      <input type="text" name="n3" id="n3" value="n3">
+  </div>
+  <div>
+      <label for="pn1">Plural noun</label>
+      <input type="text" name="pn1" id="pn1" value="pn1">
+  </div>
+  <div>
+      <label for="game">Game</label>
+      <input type="text" name="game" id="game" value="game">
+  </div>
+  <div>
+      <label for="pn2">Plural noun</label>
+      <input type="text" name="pn2" id="pn2" value="pn2">
+  </div>
+  <div>
+      <label for="pn3">Plural noun</label>
+      <input type="text" name="pn3" id="pn3" value="pn3">
+  </div>
+  <div>
+      <label for="vbing1">Verb ending in -ing</label>
+      <input type="text" name="vbing1" id="vbing1" value="vbing1">
+  </div>
+  <div>
+      <label for="vbing2">Verb ending in -ing</label>
+      <input type="text" name="vbing2" id="vbing2" value="vbing2">
+  </div>
+  <div>
+      <label for="vbing3">Verb ending in -ing</label>
+      <input type="text" name="vbing3" id="vbing3" value="vbing3">
+  </div>
+  <div>
+      <label for="plant">Plant</label>
+      <input type="text" name="plant" id="plant" value="plant">
+  </div>
+  <div>
+      <label for="bodypart">Body part</label>
+      <input type="text" name="bodypart" id="bodypart" value="bodypart">
+  </div>
+  <div>
+      <label for="place">Place</label>
+      <input type="text" name="place" id="place" value="place">
+  </div>
+  <div>
+      <label for="vbing4">Verb ending in -ing</label>
+      <input type="text" name="vbing4" id="vbing4" value="vbing4">
+  </div>
+  <div>
+    <label for="num">Number</label>
+    <input type="text" name="num" id="num" value="num">
+  </div>
+  <div>
+      <label for="pn4">Plural noun</label>
+      <input type="text" name="pn4" id="pn4" value="pn4">
+  </div>
+<input type="submit" value="Submit">
+</form>
+
+{% endblock %}
